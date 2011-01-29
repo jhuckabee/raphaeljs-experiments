@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  position: absolute;
+  top: 10;
+  left: 10;
+  margin: 0;
+  padding: 0;
+}
+#path {
+  position: absolute;
+  top: 10;
+  right: 10;
+  color: #444;
+  border: solid 1px #DDD;
+  background: #EEE;
+  padding: 5px 10px;
+}
+#path h4{
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border: solid 1px #DDD;
+  background: #FFF;
+  position: absolute;
+  bottom: 10;
+  right: 10;
+}
+table td {
+  padding: 3px;
+}
+.label {
+  font-weight: bold;
+  text-align: right;
+}
+.even {
+  background: #DDD;
+}
+.odd {
+  background: #EEE;
+}
+.footer {
+  text-align: center;
+  background: #BBB;
+  border-top: solid 1px #DDD;
+}

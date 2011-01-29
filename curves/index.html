@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <title>A Study of Cubic Bézier Curves in SVG using RaphaelJS</title>
+  <link rel="stylesheet" href="curves.css" type="text/css" media="screen">
+  <script src="../js/raphael.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="curves.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <h1>A Study of Cubic <a href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier Curves</a> in <a href="http://www.w3.org/TR/SVG/">SVG</a> using <a href="http://raphaeljs.com">RaphaelJS</a></h1>
+  <div id="path">
+    <h4><a href="http://www.w3.org/TR/SVG/paths.html#PathData">SVG Path String</a></h4>
+    <div id="pathString"></div>
+  </div>
+  <div id="drawing"></div>
+  <table>
+    <tr>
+      <td class="even label">Start X:</td><td class="even"><input type="text" id="startX" size="5" value="150" /></td>
+      <td class="even label">Y:</td><td class="even"><input type="text" id="startY" size="5" value="100" /></td>
+      <td class="odd label">End X:</td><td class="odd"><input type="text" id="endX" size="5" value="400" /></td>
+      <td class="odd label">Y:</td><td class="odd"><input type="text" id="endY" size="5" value="350" /></td>
+    </tr>
+    <tr>
+      <td class="odd label">Control 1 X:</td><td class="odd"><input type="text" id="control1X" size="5" value="100" /></td>
+      <td class="odd label">Y:</td><td class="odd"><input type="text" id="control1Y" size="5" value="275" /></td>
+      <td class="even label">Control 2 X:</td><td class="even"><input type="text" id="control2X" size="5" value="450" /></td>
+      <td class="even label">Y:</td><td class="even"><input type="text" id="control2Y" size="5" value="150" /></td>
+    </tr>
+    <tr>
+      <td class="footer" colspan="8">
+        <input type="checkbox" id="showControlLines" checked="checked" /> Show control lines?
+        <input type="checkbox" id="autoSmoothCurve" checked="checked" /> Automatic smooth curve?
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
